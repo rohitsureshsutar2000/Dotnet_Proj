@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PaintBrush/1.0.0": {
+        "dependencies": {
+          "ClassLibDoIt": "1.0.0"
+        },
+        "runtime": {
+          "PaintBrush.dll": {}
+        }
+      },
+      "ClassLibDoIt/1.0.0": {
+        "runtime": {
+          "ClassLibDoIt.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PaintBrush/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassLibDoIt/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
