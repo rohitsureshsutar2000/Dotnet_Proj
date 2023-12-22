@@ -1,6 +1,7 @@
 namespace PaintBrush;
 using DrawShapes;
 using System.Drawing;
+// using Graphics;
 public partial class Form1 : Form
 {
     DrawShapes.Point StartPoint;
@@ -21,7 +22,9 @@ public partial class Form1 : Form
         Line l=new Line(StartPoint,EndPoint,"red",3);
         Pen pen=new Pen(Color.FromArgb(255,255,0,0));
         Graphics g=this.CreateGraphics();
+        // Console.WriteLine(l.StartPoint.X);
         g.DrawLine(pen,l.StartPoint.X,l.StartPoint.Y,l.EndPoint.X,l.EndPoint.Y);
+        // g.DrawLine(pen,10,20,50,60);
     }
 
 }

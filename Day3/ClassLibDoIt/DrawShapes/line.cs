@@ -16,8 +16,8 @@ public class Line:shape{
     }
     public Line(Point sp,Point se,string c,int w):base(c,w)
     {
-        StartPoint=new Point(0,0);
-        EndPoint=new Point(0,0);
+        StartPoint=sp;
+        EndPoint=se;
     }
     public override void Draw()
     {

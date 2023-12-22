@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClassLibDoIt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc33b92220194fc88848c701908d92e636e0d3a9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+337e94dbf42a150890c862eee961bccfb13997b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClassLibDoIt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClassLibDoIt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
