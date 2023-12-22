@@ -1,6 +1,6 @@
 namespace DrawShapes;
 
-public class Line:Shapes{
+public class Line:shape{
 
     public Point StartPoint{
         get;set;
@@ -11,22 +11,22 @@ public class Line:Shapes{
     }
     public Line():base()
     {
-        StartPoint=new Point(0,0)
-        EndPoint=new Point(0,0)
+        StartPoint=new Point(0,0);
+        EndPoint=new Point(0,0);
     }
     public Line(Point sp,Point se,string c,int w):base(c,w)
     {
-        StartPoint=new Point(0,0)
-        EndPoint=new Point(0,0)
+        StartPoint=new Point(0,0);
+        EndPoint=new Point(0,0);
     }
     public override void Draw()
     {
-        Console.log("hello can we draw shapes");
+        Console.WriteLine("hello can we draw shapes");
     }
 
     
     public override string ToString()
     {
-        return base.toString()+StartPoint+" "+EndPoint;
+        return base.ToString()+this.StartPoint+" "+this.EndPoint;
     }
 }

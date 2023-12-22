@@ -1,0 +1,12 @@
+C:\Users\IET\Desktop\101\Dotnet_pro\newdotnetConnectTo git\Dotnet_Proj\Day3\ClassLibDoIt\obj\Debug\net8.0\ClassLibDoIt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\101\Dotnet_pro\newdotnetConnectTo git\Dotnet_Proj\Day3\ClassLibDoIt\obj\Debug\net8.0\ClassLibDoIt.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\101\Dotnet_pro\newdotnetConnectTo git\Dotnet_Proj\Day3\ClassLibDoIt\obj\Debug\net8.0\ClassLibDoIt.AssemblyInfo.cs
+C:\Users\IET\Desktop\101\Dotnet_pro\newdotnetConnectTo git\Dotnet_Proj\Day3\ClassLibDoIt\obj\Debug\net8.0\ClassLibDoIt.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\101\Dotnet_pro\newdotnetConnectTo git\Dotnet_Proj\Day3\ClassLibDoIt\obj\Debug\net8.0\ClassLibDoIt.sourcelink.json
+C:\Users\IET\Desktop\101\Dotnet_pro\newdotnetConnectTo git\Dotnet_Proj\Day3\ClassLibDoIt\bin\Debug\net8.0\ClassLibDoIt.deps.json
+C:\Users\IET\Desktop\101\Dotnet_pro\newdotnetConnectTo git\Dotnet_Proj\Day3\ClassLibDoIt\bin\Debug\net8.0\ClassLibDoIt.dll
+C:\Users\IET\Desktop\101\Dotnet_pro\newdotnetConnectTo git\Dotnet_Proj\Day3\ClassLibDoIt\bin\Debug\net8.0\ClassLibDoIt.pdb
+C:\Users\IET\Desktop\101\Dotnet_pro\newdotnetConnectTo git\Dotnet_Proj\Day3\ClassLibDoIt\obj\Debug\net8.0\ClassLibDoIt.dll
+C:\Users\IET\Desktop\101\Dotnet_pro\newdotnetConnectTo git\Dotnet_Proj\Day3\ClassLibDoIt\obj\Debug\net8.0\refint\ClassLibDoIt.dll
+C:\Users\IET\Desktop\101\Dotnet_pro\newdotnetConnectTo git\Dotnet_Proj\Day3\ClassLibDoIt\obj\Debug\net8.0\ClassLibDoIt.pdb
+C:\Users\IET\Desktop\101\Dotnet_pro\newdotnetConnectTo git\Dotnet_Proj\Day3\ClassLibDoIt\obj\Debug\net8.0\ref\ClassLibDoIt.dll

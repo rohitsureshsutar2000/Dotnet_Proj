@@ -25,5 +25,5 @@ public class Point{
     {
         return "X= "+X+" Y= "+Y;
     }
-    override  
+    
 }

@@ -1,11 +1,11 @@
 namespace DrawShapes;
 
-public class shape{
+public abstract class shape{
     public string Color{
         get;set;
     }
 
-    public int width{
+    public int Width{
         get;
         set;
     }
@@ -21,11 +21,11 @@ public class shape{
         Color=a;
         Width=b;
     }
-    public abstract class Draw();
+    public abstract void Draw();
 
     public override string ToString()
     {
-        return "color "+ Color+" width "+width;
+        return "color "+ Color+" width "+Width;
     }
 
 }
