@@ -1,0 +1,19 @@
+﻿@using player
+
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+<div class="ClaW">
+@{
+    Player[] p=ViewData["ProBro"] as Player[];       
+        for (int i=0;i<p.Length;i++){
+        <p>player InGameName: @p[i].Id </p>
+        <p>player name: @p[i].Name </p>
+        <p>player Kd: @p[i].Kd </p> 
+        <p><img src="/img/download.jfif" /> </p>
+        }
+
+}
+
+</div>
