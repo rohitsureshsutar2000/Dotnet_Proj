@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IET\\Desktop\\101\\Dotnet_pro\\Dotnet_Proj\\RohitProject\\RohitProject.csproj",
+      "projectUniqueName": "C:\\Users\\IET\\Desktop\\101\\Dotnet_pro\\newdotnetConnectTo git\\Dotnet_Proj\\RohitProject\\RohitProject.csproj",
       "projectName": "RohitProject",
-      "projectPath": "C:\\Users\\IET\\Desktop\\101\\Dotnet_pro\\Dotnet_Proj\\RohitProject\\RohitProject.csproj",
+      "projectPath": "C:\\Users\\IET\\Desktop\\101\\Dotnet_pro\\newdotnetConnectTo git\\Dotnet_Proj\\RohitProject\\RohitProject.csproj",
       "packagesPath": "C:\\Users\\IET\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IET\\Desktop\\101\\Dotnet_pro\\Dotnet_Proj\\RohitProject\\obj\\",
+      "outputPath": "C:\\Users\\IET\\Desktop\\101\\Dotnet_pro\\newdotnetConnectTo git\\Dotnet_Proj\\RohitProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IET\\AppData\\Roaming\\NuGet\\NuGet.Config"
