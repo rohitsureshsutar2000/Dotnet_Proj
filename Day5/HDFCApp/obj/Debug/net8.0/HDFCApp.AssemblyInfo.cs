@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HDFCApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43b44bbc0b80513e0be5ffe0dc17e0d3a792f3d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6aa7e80169dd0c70e8ccf632b3996fb95a307c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("HDFCApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HDFCApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
