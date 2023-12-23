@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking", "Banking\Banking.csproj", "{EC76035D-9E7F-4A5B-A03B-87FEBB4FE597}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HDFCApp", "HDFCApp\HDFCApp.csproj", "{25C2FD82-2D43-449E-906F-B8CF9529D64B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +14,15 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC76035D-9E7F-4A5B-A03B-87FEBB4FE597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC76035D-9E7F-4A5B-A03B-87FEBB4FE597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC76035D-9E7F-4A5B-A03B-87FEBB4FE597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC76035D-9E7F-4A5B-A03B-87FEBB4FE597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25C2FD82-2D43-449E-906F-B8CF9529D64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25C2FD82-2D43-449E-906F-B8CF9529D64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25C2FD82-2D43-449E-906F-B8CF9529D64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25C2FD82-2D43-449E-906F-B8CF9529D64B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
