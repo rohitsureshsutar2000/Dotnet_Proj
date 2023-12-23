@@ -1,11 +1,11 @@
 namespace Bank;
-class Account{
-    public int Balance{
+public class Account{
+    public double Balance{
         get;set;
     }
-    Account()
-    {
-        this.Balance=
+
+    public void Deposit(double b){
+        this.Balance=this.Balance.
     }
 
 }
