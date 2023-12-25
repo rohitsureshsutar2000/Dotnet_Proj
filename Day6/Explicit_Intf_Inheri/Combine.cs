@@ -10,11 +10,11 @@ public class inheri:emp,orderDetails{
         Console.log("Good Morning");
 
     }
-    void showDetails()
+    void orderDetails.showDetails()
     {
         Console.log("in show Details");
     }
-    void showDetails()
+    void emp.showDetails()
     {
         Console.log("in show Details");
     }

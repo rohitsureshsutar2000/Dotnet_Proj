@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "mFSCkqs6RWDkiOh8Clf5CI4DRsbH6i2oaB27xeoMgE+4xY/+17rlwdOrtpfdFEIAicgTgqsGFYpiwVHCJiFD1g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\IET\\Desktop\\101\\Dotnet_pro\\newdotnetConnectTo git\\Dotnet_Proj\\Day6\\Books\\Books.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IET\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\IET\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\IET\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\IET\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
