@@ -15,6 +15,10 @@ if(connection!=null )
 // string query="update emp set ename='sayali' where empno=6001";    // update table
 string query="select empno,ename from emp";                         // read table
 // string query="delete from emp where empno=7840";                 // Delete data
+
+// 
+
+
 MySqlCommand command=new MySqlCommand(query,connection);
 
 try
@@ -31,6 +35,16 @@ try
                 Console.WriteLine(reader["ename"].ToString());
             }
     // command.ExecuteNonQuery();           =DML command           //  delete
+    
+        reader.Close();
+    // Aggreagate Query
+    query="select count(*) from emp";  
+
+    
+    command=new MySqlCommand(query,connection);
+    Console.WriteLine(command.ExecuteScalar().ToString());
+
+
 }
 catch (Exception e) 
 {
