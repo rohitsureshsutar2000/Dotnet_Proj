@@ -2,7 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BOJ\BOJ.csproj" />
-    <ProjectReference Include="..\BLL\BLL.csproj" />
+    
   </ItemGroup>
 
   <PropertyGroup>

@@ -3,7 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BOJ\BOJ.csproj" />
     <ProjectReference Include="..\DAL\DAL.csproj" />
-    <ProjectReference Include="..\PersonDo\PersonDo.csproj" />
+    
   </ItemGroup>
 
   <PropertyGroup>

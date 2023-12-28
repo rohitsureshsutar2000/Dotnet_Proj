@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PersonDo/1.0.0": {
+        "dependencies": {
+          "BLL": "1.0.0",
+          "BOJ": "1.0.0"
+        },
+        "runtime": {
+          "PersonDo.dll": {}
+        }
+      },
+      "BLL/1.0.0": {
+        "dependencies": {
+          "BOJ": "1.0.0",
+          "DAL": "1.0.0"
+        },
+        "runtime": {
+          "BLL.dll": {}
+        }
+      },
+      "BOJ/1.0.0": {
+        "runtime": {
+          "BOJ.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "dependencies": {
+          "BOJ": "1.0.0"
+        },
+        "runtime": {
+          "DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PersonDo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BOJ/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "BOJ/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BOJ.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BOJ.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BOJ": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BOJ/1.0.0": {
+      "type": "project",
+      "path": "../BOJ/BOJ.csproj",
+      "msbuildProject": "../BOJ/BOJ.csproj"
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "BOJ >= 1.0.0",
+      "DAL >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\IET\\.nuget\\packages\\": {}
@@ -31,7 +69,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\IET\\Desktop\\101\\Dotnet_pro\\newdotnetConnectTo git\\Dotnet_Proj\\CompleteWeb\\BOJ\\BOJ.csproj": {
+              "projectPath": "C:\\Users\\IET\\Desktop\\101\\Dotnet_pro\\newdotnetConnectTo git\\Dotnet_Proj\\CompleteWeb\\BOJ\\BOJ.csproj"
+            },
+            "C:\\Users\\IET\\Desktop\\101\\Dotnet_pro\\newdotnetConnectTo git\\Dotnet_Proj\\CompleteWeb\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\IET\\Desktop\\101\\Dotnet_pro\\newdotnetConnectTo git\\Dotnet_Proj\\CompleteWeb\\DAL\\DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
