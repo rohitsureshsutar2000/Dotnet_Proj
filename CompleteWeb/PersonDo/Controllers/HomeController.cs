@@ -29,7 +29,6 @@ public class HomeController : Controller
     {
         if(username=="admin" && password=="admin")
         {
-            
             return this.RedirectToAction("Index");
         }
         Console.WriteLine(username+" "+password);
