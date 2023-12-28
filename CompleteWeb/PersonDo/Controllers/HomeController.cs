@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using PersonDo.Models;
+// using System.ComponentModel.DataValidation;
 
 namespace PersonDo.Controllers;
 
@@ -17,6 +18,27 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    public IActionResult form()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult form(string username,string password)
+    {
+        if(username=="admin" && password=="admin")
+        {
+            
+            return this.RedirectToAction("Index");
+        }
+        Console.WriteLine(username+" "+password);
+        
+        return View();
+    }
+
+
+
 
     public IActionResult Privacy()
     {
