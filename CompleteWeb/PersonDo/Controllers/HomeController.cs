@@ -1,6 +1,9 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using PersonDo.Models;
+using System.Collections.Generic;
+using BOJ;
+using BLL;
 // using System.ComponentModel.DataValidation;
 
 namespace PersonDo.Controllers;
@@ -27,15 +30,27 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult form(string username,string password)
     {
-        if(username=="admin" && password=="admin")
+        List<RiderLogin> lst=new List<RiderLogin>();
+        lst=BLLservice.GetAlldetails();
+        foreach (RiderLogin item in lst)
         {
-            return this.RedirectToAction("Index");
+            if(username==item.Username && password==item.Password)
+            {
+                    return this.RedirectToAction("ShowData");
+            }
         }
-        Console.WriteLine(username+" "+password);
+        
+        // Console.WriteLine(username+" "+password);
         
         return View();
     }
 
+    public IActionResult ShowData()
+    {
+
+        return View();
+
+    }
 
 
 
