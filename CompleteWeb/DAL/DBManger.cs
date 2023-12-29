@@ -16,6 +16,7 @@ public static class BDmanager {
         try
         {
             MySqlCommand cmd=new MySqlCommand(query,connection);
+            My
             connection.Open();
             MySqlDataReader dr=cmd.ExecuteReader();
             while(dr.Read())
