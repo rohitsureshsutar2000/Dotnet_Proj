@@ -1,3 +1,4 @@
+namespace rider;
 public class RiderLogin{
     private int id;
     private string username;
