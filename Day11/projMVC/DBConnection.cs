@@ -16,7 +16,8 @@ public static class BDmanager {
         {
             MySqlCommand cmd=new MySqlCommand(query,connection);
             connection.Open();
-            countVar=int.Parse(cmd.ExecuteScalar());
+            countVar=int.Parse(cmd.ExecuteScalar().ToString());
+            Console.WriteLine(countVar);
         }
         catch(Exception e)
         {
