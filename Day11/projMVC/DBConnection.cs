@@ -6,6 +6,32 @@ namespace dbmanagerUtil;
 
 public static class BDmanager {
 
+    public static int count()
+    {
+        MySqlConnection connection=new MySqlConnection();
+        connection.ConnectionString="server=localhost;port=3306;user=root;password=welcome;database=riderpoint";
+        int countVar=0;
+        string query="select count(*) from loginrider";
+        try
+        {
+            MySqlCommand cmd=new MySqlCommand(query,connection);
+            
+            connection.Open();
+            MySqlDataReader dr=cmd.ExecuteScalar();
+            countVar=int.Parse(dr);
+        }
+        catch(Exception e)
+        {
+            
+            Console.WriteLine(e.Message);
+        }
+        finally{
+            connection.Close();
+        }
+        return countVar;
+    }
+    {
+
     public static List<RiderLogin> GetAlldetails()
     {
         List<RiderLogin> lst=new List<RiderLogin>();
@@ -40,8 +66,8 @@ public static class BDmanager {
     }
     public static string Registration()
     {
-        List<RiderLogin> lst=new List<RiderLogin>();
-        List<RiderLogin> lst=new List<Rider>();
+        List<Rider_Login> lst=new List<Rider_Login>();
+        List<Rider_details> lst=new List<Rider_details>();
         MySqlConnection connection=new MySqlConnection();
         connection.ConnectionString="server=localhost;port=3306;user=root;password=welcome;database=riderpoint";
         string query="select * from loginrider";
