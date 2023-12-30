@@ -6,9 +6,13 @@ var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
 
-app.MapGet("/apii", () => {
-    List<RiderLogin> lst = BDmanager.GetAlldetails();
+app.MapGet("/alldata", () => {
+    List<RiderStatus> lst = BDmanager.GetAlldetails();
     return lst;
+});
+app.MapGet("/valid", () => {
+    return BDmanager.GetAlldetails();
+    
 });
 
 
