@@ -23,9 +23,25 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Registration()
+    {
+        return View();
+    }
+    
+    [HttpPost]
     public IActionResult Registration(string Name,string Email,string Mobile, string Address , string Username,string Password )
     {
-        List<RiderLogin> s= BDmanager.Registration(Name,Email,Mobile,Address,Username,Password);
+        bool flag=false;
+        string s= BDmanager.Registration(Name,Email,Mobile,Address,Username,Password);
+        if(s!=null){
+            
+            ViewData["Data added!!!"]=s;
+        }
+        else
+        {
+            ViewData["Data added!!!"]="Plz register";
+        }
+        
         return View();
     }
 

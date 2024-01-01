@@ -11,7 +11,7 @@ public static class BDmanager {
         MySqlConnection connection=new MySqlConnection();
         connection.ConnectionString="server=localhost;port=3306;user=root;password=welcome;database=riderpoint";
         int countVar=0;
-        string query="select count(*) from loginrider";
+        string query="select count(*) from rider_details";
         try
         {
             MySqlCommand cmd=new MySqlCommand(query,connection);
@@ -63,17 +63,28 @@ public static class BDmanager {
         }
         return lst;
     }
-    public static List<RiderLogin> Registration(string Name,string Email,string Mobile, string Address , string Username,string Password )
+
+
+
+
+    public static string Registration(string Name,string Email,string Mobile, string Address , string Username,string Password )
     {
-        int countvar=BDmanager.count();
+        // int countvar=BDmanager.count()+1;
         List<RiderLogin> lst=new List<RiderLogin>();
         List<Rider_details> lst1=new List<Rider_details>();
         MySqlConnection connection=new MySqlConnection();
         connection.ConnectionString="server=localhost;port=3306;user=root;password=welcome;database=riderpoint";
-        string query="insert into Rider_Login values(?,?,?,?,?,?)";
+        string query="insert into rider_details(name,mobile_no,address) values(@Name,@Mobile,@Address)";
         try
         {
+          connection.Open();
+          MySqlCommand cmd=new MySqlCommand(query,connection);
           
+          cmd.Parameters.AddWithValue("@Name",Name);
+          cmd.Parameters.AddWithValue("@Mobile",Mobile);
+          cmd.Parameters.AddWithValue("@Address",Address);
+          cmd.ExecuteNonQuery();
+          return "data added";
         }
         catch(Exception e)
         {
@@ -83,6 +94,6 @@ public static class BDmanager {
         finally{
             connection.Close();
         }
-        return lst;
+        return "";
     }
 }
