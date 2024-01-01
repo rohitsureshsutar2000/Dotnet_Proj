@@ -33,9 +33,10 @@ public class HomeController : Controller
     {
         bool flag=false;
         string s= BDmanager.Registration(Name,Email,Mobile,Address,Username,Password);
+        ViewData["Data added!!!"]=s;
         if(s!=null){
             
-            ViewData["Data added!!!"]=s;
+            
         }
         else
         {

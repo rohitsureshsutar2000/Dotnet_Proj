@@ -84,7 +84,7 @@ public static class BDmanager {
           cmd.Parameters.AddWithValue("@Mobile",Mobile);
           cmd.Parameters.AddWithValue("@Address",Address);
           cmd.ExecuteNonQuery();
-          return "data added";
+          return "data added!!";
         }
         catch(Exception e)
         {
