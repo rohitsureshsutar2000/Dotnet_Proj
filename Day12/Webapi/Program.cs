@@ -1,3 +1,5 @@
+using BOJ;
+using db;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,6 +18,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.MapGet("/gettable", () =>
+{
+    List<RiderLogin> lst=DBmanager.getall();
+
+    return lst;
+});
 
 
 app.MapGet("/getdata", () =>
@@ -26,16 +34,16 @@ app.MapGet("/getdata", () =>
     lst.Add(3);
     lst.Add(4);
     return lst;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+});
+// .WithName("");
+// .WithOpenApi();
 
 app.Run();
 
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+// app.MapControllerRoute(
+//     name: "default",
+//     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
