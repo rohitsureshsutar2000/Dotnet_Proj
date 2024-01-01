@@ -2,7 +2,9 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using projMVC.Models;
 using dbmanagerUtil;
+using BOJ;
 namespace projMVC.Controllers;
+
 
 public class HomeController : Controller
 {
@@ -23,7 +25,7 @@ public class HomeController : Controller
     }
     public IActionResult Registration(string Name,string Email,string Mobile, string Address , string Username,string Password )
     {
-        string s= BDmanager.Registration(Name,Email,Mobile,Address,Username,Password);
+        List<RiderLogin> s= BDmanager.Registration(Name,Email,Mobile,Address,Username,Password);
         return View();
     }
 

@@ -63,11 +63,11 @@ public static class BDmanager {
         }
         return lst;
     }
-    public static string Registration(string Name,string Email,string Mobile, string Address , string Username,string Password )
+    public static List<RiderLogin> Registration(string Name,string Email,string Mobile, string Address , string Username,string Password )
     {
-        int countvar=dbmanagerUtil.count();
-        List<Rider_Login> lst=new List<Rider_Login>();
-        List<Rider_details> lst=new List<Rider_details>();
+        int countvar=BDmanager.count();
+        List<RiderLogin> lst=new List<RiderLogin>();
+        List<Rider_details> lst1=new List<Rider_details>();
         MySqlConnection connection=new MySqlConnection();
         connection.ConnectionString="server=localhost;port=3306;user=root;password=welcome;database=riderpoint";
         string query="insert into Rider_Login values(?,?,?,?,?,?)";
