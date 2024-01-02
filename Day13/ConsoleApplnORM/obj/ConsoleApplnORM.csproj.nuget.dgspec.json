@@ -38,9 +38,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "MySql.Data": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.2.0, )"
             },
             "MySql.EntityFrameworkCore": {
               "target": "Package",

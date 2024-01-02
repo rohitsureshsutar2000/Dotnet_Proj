@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+
+// using MySQL.Data.Entity.Extensions; 
+// using Microsoft.EntityFrameworkCore;
 using BOL;
 
 class CollectionContext:DbContext
@@ -8,10 +10,16 @@ class CollectionContext:DbContext
         get;set;
     }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder ob)
+    // protected override void OnConfiguring(DbContextOptionsBuilder ob)
+    // {
+    //     string stringS=@"server=localhost; port=3306;user=root;password=welcome;database=dotnetpract";
+        
+    //     ob.UseMySQl(stringS);
+    // }
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        string stringS=@"server=localhost; port=3306;username=root;password=welcome;database=dotnetpract";
-        ob.UseMySql(stringS);
+        string conString=@"server=localhost;port=3306;user=root;password=welcome;database=dotnetpract";       
+        optionsBuilder.UseMySQL(conString);
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -21,7 +29,7 @@ class CollectionContext:DbContext
             entity.HasKey(e=>e.ProductID);
             entity.HasKey(e=>e.ProductName );
         });
-        modelBuilder.Entity<Product>().ToTable("product");
+        modelBuilder.Entity<Product>().ToTable("products");
 
     }
 

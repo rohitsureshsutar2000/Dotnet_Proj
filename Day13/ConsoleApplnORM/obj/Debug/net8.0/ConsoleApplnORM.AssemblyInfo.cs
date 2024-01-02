@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleApplnORM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2d34a190002d0052ecd5385e3f0c5a20046b139")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+066d41663cf8350b0366cda2f2766524c66febc5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleApplnORM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleApplnORM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
