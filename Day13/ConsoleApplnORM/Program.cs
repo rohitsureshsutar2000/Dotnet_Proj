@@ -20,10 +20,21 @@ while(ch!=5)
             break;
 
         case 2:
+            var ss=new Product(){
+                  ProductID=400,
+                 ProductName="hello"
+            };
+            Console.WriteLine(bd.insert(ss));
             break;
         case 3:
+            ss=new Product(){
+                ProductID=400,
+                ProductName="hello000"
+            };
+            Console.WriteLine(bd.update(ss));
             break;
         case 4:
+            bd.Delete(400);
             break;
         case 5:
             Console.WriteLine("Thank you for staying with us....");
