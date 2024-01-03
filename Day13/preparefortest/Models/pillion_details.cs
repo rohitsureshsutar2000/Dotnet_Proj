@@ -1,5 +1,5 @@
 namespace models;
-class pilion_details{
+class Pilion_details{
     public int Pillion_id{
         get;set;
     }
